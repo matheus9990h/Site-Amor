@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#120b12">
+  <meta name="description" content="Um cantinho feito especialmente para nós.">
+  <title>Para você, meu amor ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="noise"></div>
+  <div id="hearts" aria-hidden="true"></div>
+
+  <section class="opening" id="opening">
+    <div class="opening-orbit orbit-one"></div>
+    <div class="opening-orbit orbit-two"></div>
+    <div class="opening-stars" aria-hidden="true"></div>
+    <div class="opening-glow"></div>
+
+    <div class="opening-top">
+      <span class="mini-heart">♡</span>
+      <span>um pequeno pedaço do meu coração</span>
+      <span class="mini-heart">♡</span>
+    </div>
+
+    <div class="envelope-wrap">
+      <div class="opening-copy">
+        <div class="eyebrow">UMA SURPRESA PARA VOCÊ</div>
+        <h2>Eu escrevi uma coisa<br><em>só para você.</em></h2>
+        <p>Não abra com pressa.</p>
+      </div>
+
+      <div class="envelope-scene">
+        <div class="floating-note note-left">para<br>você ♡</div>
+        <div class="floating-note note-right">com<br>amor</div>
+
+        <div class="envelope" id="envelope" role="button" tabindex="0" aria-label="Abrir carta">
+          <div class="envelope-shadow"></div>
+          <div class="envelope-back"></div>
+
+          <div class="letter-peek">
+            <div class="letter-line"></div>
+            <span>Para você</span>
+            <small>com todo meu amor</small>
+            <div class="letter-heart">♥</div>
+          </div>
+
+          <div class="flap"></div>
+          <div class="envelope-front"></div>
+
+          <div class="seal">
+            <span>♥</span>
+          </div>
+        </div>
+      </div>
+
+      <button class="open-hint" id="openHint" type="button">
+        <span class="hint-icon">↘</span>
+        <span>toque na carta para abrir</span>
+      </button>
+    </div>
+
+    <div class="opening-bottom">
+      <span>feito com carinho</span>
+      <span class="bottom-line"></span>
+      <span>para alguém especial</span>
+    </div>
+  </section>
+
+  <main id="site" class="site hidden">
+    <section class="hero">
+      <div class="hero-image">
+        <img src="assets/foto-1.jpg" alt="Uma foto dela">
+      </div>
+      <div class="hero-content">
+        <div class="eyebrow">PARA A MULHER QUE EU AMO</div>
+        <h1>Você é a minha<br><em>parte favorita</em><br>da vida.</h1>
+        <p class="hero-sub">E eu queria deixar registrado, de um jeito diferente, o quanto você significa para mim.</p>
+        <button class="scroll-btn" data-scroll="counter">↓ <span>vem comigo</span></button>
+      </div>
+    </section>
+
+    <section class="section counter-section" id="counter">
+      <div class="section-label">O nosso tempo</div>
+      <h2>Desde que você chegou,<br>o tempo ficou mais bonito.</h2>
+      <div class="counter-grid">
+        <div class="counter-card"><strong id="years">0</strong><span>anos</span></div>
+        <div class="counter-card"><strong id="months">0</strong><span>meses</span></div>
+        <div class="counter-card"><strong id="days">0</strong><span>dias</span></div>
+        <div class="counter-card"><strong id="hours">0</strong><span>horas</span></div>
+      </div>
+    </section>
+
+    <section class="section story">
+      <div class="photo-card tilt-left">
+        <img src="assets/foto-2.jpg" alt="Foto especial">
+        <span class="photo-caption">uma das minhas pessoas favoritas</span>
+      </div>
+      <div class="story-copy">
+        <div class="section-label">Uma coisa que eu queria te dizer</div>
+        <h2>Eu escolheria você<br><em>de novo.</em></h2>
+        <p>
+          Entre tantas pessoas, tantos caminhos e tantos dias possíveis,
+          eu sou muito feliz por ter encontrado você.
+        </p>
+        <p>
+          Eu amo o seu jeito, suas manias, suas risadas, os pequenos detalhes
+          que talvez você nem perceba, mas que fazem você ser exatamente quem é.
+        </p>
+        <p class="signature">— de alguém que tem muita sorte de te amar.</p>
+      </div>
+    </section>
+
+    <section class="section gallery">
+      <div class="section-heading">
+        <div>
+          <div class="section-label">Nossos registros</div>
+          <h2>Momentos que eu<br><em>guardaria para sempre.</em></h2>
+        </div>
+        <span class="gallery-count">04 fotos</span>
+      </div>
+      <div class="gallery-grid gallery-four">
+        <figure class="gallery-item large">
+          <img src="assets/foto-1.jpg" alt="Momento especial">
+          <figcaption>“Que sorte a minha poder olhar para você.”</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="assets/foto-2.jpg" alt="Momento especial">
+          <figcaption>Você, do jeitinho que eu gosto.</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="assets/foto-3.jpg" alt="Momento especial">
+          <figcaption>Esse seu olhar que eu adoro.</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="assets/foto-4.jpg" alt="Momento especial">
+          <figcaption>Mais uma memória para guardar.</figcaption>
+        </figure>
+      </div>
+      <p class="add-photos">Cada foto pode contar uma parte da história de vocês. Quando você me passar os momentos e as datas, eu troco essas legendas por lembranças reais.</p>
+    </section>
+
+    <section class="section timeline">
+      <div class="section-label">A nossa história</div>
+      <h2>Pequenos capítulos de<br><em>uma história enorme.</em></h2>
+      <div class="timeline-list">
+        <article class="timeline-item">
+          <span class="timeline-dot"></span>
+          <div class="timeline-date">01</div>
+          <div>
+            <h3>O começo</h3>
+            <p>O dia em que a nossa história começou. Troque este texto pela data e pelo momento de vocês.</p>
+          </div>
+        </article>
+        <article class="timeline-item">
+          <span class="timeline-dot"></span>
+          <div class="timeline-date">02</div>
+          <div>
+            <h3>Um momento inesquecível</h3>
+            <p>Aqui entra aquele dia que você nunca quer esquecer.</p>
+          </div>
+        </article>
+        <article class="timeline-item">
+          <span class="timeline-dot"></span>
+          <div class="timeline-date">03</div>
+          <div>
+            <h3>E ainda é só o começo...</h3>
+            <p>Porque eu quero viver muitos outros capítulos ao seu lado.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section letter-section">
+      <div class="letter">
+        <div class="section-label">Uma carta para você</div>
+        <h2>Leia devagar.</h2>
+        <div class="letter-text" id="letterText">
+          <p>Meu amor,</p>
+          <p>
+            Se você chegou até aqui, é porque resolveu abrir esse pequeno
+            pedaço do meu coração que eu transformei em site.
+          </p>
+          <p>
+            Talvez eu nem sempre consiga falar tudo que sinto do jeito certo,
+            então fiz isso para tentar deixar uma coisa bem clara:
+            <strong>eu amo você.</strong>
+          </p>
+          <p>
+            Obrigado por cada conversa, cada carinho, cada risada e por todos
+            os momentos que fizeram a minha vida ter um pouco mais de sentido.
+          </p>
+          <p>
+            Eu não quero apenas lembrar do que já vivemos.
+            Quero continuar criando memórias com você.
+          </p>
+          <p>Com amor, sempre.<br><strong>Seu amor ❤️</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section final">
+      <div class="final-heart">♥</div>
+      <div class="section-label">E se eu pudesse resumir tudo...</div>
+      <h2>Eu escolheria<br><em>você.</em></h2>
+      <p>Hoje. Amanhã. E em todos os dias que a vida deixar a gente viver.</p>
+      <button id="surpriseBtn" class="primary-btn">Tenho mais uma coisa pra te mostrar ♥</button>
+      <div id="surprise" class="surprise hidden">
+        <div class="surprise-inner">
+          <span>♡</span>
+          <h3>Você é o meu lugar favorito.</h3>
+          <p>Agora vem cá e me dá um abraço.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>feito com amor, especialmente para você • <span>♥</span></footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
