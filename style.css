@@ -412,9 +412,12 @@ footer{text-align:center;border-top:1px solid var(--line);padding:30px;color:#67
  .timeline-end{width:calc(100% - 35px)}
 }
 @media(max-width:390px){.timeline-list{padding-left:14px}.timeline-list::before{left:14px}.timeline-item,.timeline-item:nth-child(even){padding-left:39px}.timeline-dot{left:14px;width:34px;height:34px}.timeline-content{padding:20px 17px}.timeline-date span{font-size:2rem}}
+<<<<<<< HEAD
 
 
 /* Quinta foto da galeria */
 .gallery-item-new{position:relative}
 .gallery-item-new:after{content:"♡";position:absolute;top:14px;right:16px;width:34px;height:34px;display:grid;place-items:center;border:1px solid rgba(255,255,255,.35);border-radius:50%;background:rgba(20,10,18,.28);backdrop-filter:blur(6px);color:#fff;font-size:1rem;opacity:.9}
 @media(max-width:800px){.gallery-item-new:after{top:10px;right:10px;width:30px;height:30px}}
+=======
+>>>>>>> 24d1567f0fe0a3a4c10a65183ff216278967ecde
