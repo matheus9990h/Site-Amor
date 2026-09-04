@@ -28,7 +28,7 @@ async function openSite() {
   // Iniciamos a música imediatamente, antes do setTimeout da animação.
   if (audio) {
     try {
-      audio.volume = 0.45;
+      audio.volume = 0.35;
       await audio.play();
     } catch (error) {
       console.log("A reprodução automática foi bloqueada ou o MP3 não está disponível:", error);
