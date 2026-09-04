@@ -17,11 +17,23 @@ const $$ = (selector) => document.querySelectorAll(selector);
 const opening = $("#opening");
 const envelope = $("#envelope");
 const site = $("#site");
+const audio = $("#musica");
 
-function openSite() {
+async function openSite() {
   if (opening.classList.contains("is-opening")) return;
   opening.classList.add("is-opening");
   envelope.classList.add("open");
+
+  // O clique/toque na carta é a interação do usuário que libera o áudio.
+  // Iniciamos a música imediatamente, antes do setTimeout da animação.
+  if (audio) {
+    try {
+      audio.volume = 0.45;
+      await audio.play();
+    } catch (error) {
+      console.log("A reprodução automática foi bloqueada ou o MP3 não está disponível:", error);
+    }
+  }
 
   setTimeout(() => {
     opening.classList.add("closed");
@@ -126,7 +138,6 @@ function burstHearts(amount = 12) {
 }
 
 // Música.
-const audio = $("#musica");
 const playBtn = $("#playBtn");
 const progress = $("#progress");
 const musicStatus = $("#musicStatus");
@@ -154,11 +165,6 @@ audio?.addEventListener("error", () => {
 
 playBtn?.addEventListener("click", async () => {
   if (!audio) return;
-
-  if (!musicReady) {
-    musicStatus.innerHTML = 'Falta o MP3: <b>audio/girassois-de-van-gogh.mp3</b>';
-    return;
-  }
 
   if (audio.paused) {
     try {
