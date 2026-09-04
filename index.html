@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#100a10">
+  <meta name="description" content="Dois meses, 400 km e um amor que não cabe na distância.">
+  <title>2 meses de nós ❤️</title>
+  <link rel="icon" type="image/png" href="assets/logo-amor.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="locked">
+  <div class="noise"></div>
+  <div id="hearts" aria-hidden="true"></div>
+
+  <!-- ABERTURA -->
+  <section class="opening" id="opening">
+    <div class="opening-orbit orbit-one"></div>
+    <div class="opening-orbit orbit-two"></div>
+    <div class="opening-stars" aria-hidden="true"></div>
+    <div class="opening-glow"></div>
+
+    <div class="opening-top">
+      <span>♡</span>
+      <span>para a pessoa que mora no meu coração</span>
+      <span>♡</span>
+    </div>
+
+    <div class="envelope-wrap">
+      <div class="opening-copy">
+        <div class="eyebrow">V2 • 2 MESES DE NÓS</div>
+        <h2>Tem uma coisa que eu fiz<br><em>só para você.</em></h2>
+        <p>Abra devagar. Essa parte é importante.</p>
+      </div>
+
+      <div class="envelope-scene">
+        <div class="floating-note note-left">400 km<br>♡</div>
+        <div class="floating-note note-right">2 meses<br>com você</div>
+
+        <div class="envelope" id="envelope" role="button" tabindex="0" aria-label="Abrir carta">
+          <div class="envelope-shadow"></div>
+          <div class="envelope-back"></div>
+          <div class="letter-peek">
+            <div class="letter-line"></div>
+            <span>Para você</span>
+            <small>2 meses • 400 km • nós</small>
+            <div class="letter-heart">♥</div>
+          </div>
+          <div class="flap"></div>
+          <div class="envelope-front"></div>
+          <div class="seal"><span>♥</span></div>
+        </div>
+      </div>
+
+      <button class="open-hint" id="openHint" type="button">
+        <span class="hint-icon">↘</span>
+        <span>toque na carta para abrir</span>
+      </button>
+    </div>
+
+    <div class="opening-bottom">
+      <span>feito com carinho</span>
+      <span class="bottom-line"></span>
+      <span>para nós dois</span>
+    </div>
+  </section>
+
+  <main id="site" class="site hidden">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-image">
+        <img src="assets/foto-1.jpg" alt="Um momento especial">
+        <div class="hero-badge"><span>♡</span> 2 meses</div>
+      </div>
+      <div class="hero-content">
+        <div class="eyebrow">2 MESES • 400 KM • UM SÓ CORAÇÃO</div>
+        <h1>Você é a minha<br><em>parte favorita</em><br>da distância.</h1>
+        <p class="hero-sub">Dois meses podem parecer pouco no calendário. Mas, quando é com você, cada conversa, cada saudade e cada “eu te amo” parece caber em uma história inteira.</p>
+        <div class="hero-actions">
+          <button class="scroll-btn" data-scroll="counter">↓ <span>continua comigo</span></button>
+          <button class="music-mini" id="musicTop" type="button">♫ <span>nossa música</span></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTADOR -->
+    <section class="section counter-section" id="counter">
+      <div class="section-label">O nosso tempo</div>
+      <h2>Desde <em>17 de julho de 2026</em>,<br>o tempo tem outro significado.</h2>
+
+      <div class="counter-grid">
+        <div class="counter-card"><strong id="months">0</strong><span>meses</span></div>
+        <div class="counter-card"><strong id="days">0</strong><span>dias</span></div>
+        <div class="counter-card"><strong id="hours">0</strong><span>horas</span></div>
+        <div class="counter-card"><strong id="minutes">0</strong><span>minutos</span></div>
+      </div>
+
+      <div class="milestone">
+        <span class="milestone-icon">♡</span>
+        <div>
+          <strong id="milestoneTitle">Rumo aos 2 meses</strong>
+          <p id="milestoneText">Cada dia é mais um pedacinho da nossa história.</p>
+        </div>
+        <div class="milestone-date">17.09.2026</div>
+      </div>
+    </section>
+
+    <!-- DISTÂNCIA -->
+    <section class="section distance-section">
+      <div class="distance-copy">
+        <div class="section-label">A nossa matemática</div>
+        <h2>400 km não parecem tão grandes quando o coração já sabe <em>onde quer estar.</em></h2>
+        <p>Tem dias em que a distância aperta. Tem noites em que eu queria simplesmente atravessar esses quilômetros e aparecer aí. Mas mesmo de longe, você consegue estar presente nos meus dias de um jeito que muita gente perto nunca conseguiu.</p>
+        <div class="distance-pill"><span>400</span><small>KM DE DISTÂNCIA<br>ENTRE NÓS</small></div>
+      </div>
+
+      <div class="distance-visual">
+        <div class="route-line"></div>
+        <div class="map-dot dot-a"><span>eu</span></div>
+        <div class="map-dot dot-b"><span>você</span></div>
+        <div class="route-label">400 km</div>
+        <div class="route-heart">♥</div>
+      </div>
+    </section>
+
+    <!-- STORY -->
+    <section class="section story">
+      <div class="photo-card tilt-left">
+        <img src="assets/foto-2.jpg" alt="Foto especial dela">
+        <span class="photo-caption">uma das minhas pessoas favoritas</span>
+      </div>
+      <div class="story-copy">
+        <div class="section-label">Uma coisa que eu queria te dizer</div>
+        <h2>Eu escolheria você<br><em>de novo.</em></h2>
+        <p>Entre tantas pessoas, tantos caminhos e tantos dias possíveis, eu sou muito feliz por ter encontrado você.</p>
+        <p>Eu amo o seu jeito, suas manias, suas risadas e aqueles pequenos detalhes que talvez você nem perceba, mas que fazem você ser exatamente quem é.</p>
+        <p>E mesmo que a nossa história tenha começado pela tela, o que eu sinto por você nunca pareceu virtual.</p>
+        <p class="signature">— de alguém que tem muita sorte de ter você.</p>
+      </div>
+    </section>
+
+    <!-- MÚSICA -->
+    <section class="section music-section" id="musica">
+      <div class="music-card">
+        <div class="music-cover">
+          <img src="assets/logo-amor.png" alt="Capa da nossa música">
+          <span class="vinyl-ring"></span>
+        </div>
+        <div class="music-info">
+          <div class="section-label">A música que lembra você</div>
+          <h2>Girassóis de Van Gogh</h2>
+          <p>The Ralph &amp; Freittas</p>
+          <div class="music-wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+
+          <audio id="musica" loop preload="metadata">
+            <source src="audio/girassois-de-van-gogh.mp3" type="audio/mpeg">
+          </audio>
+
+          <div class="player-row">
+            <button class="play-btn" id="playBtn" type="button" aria-label="Tocar música">▶</button>
+            <div class="player-meta">
+              <span id="musicStatus">Coloque o MP3 na pasta <b>audio</b> para tocar aqui.</span>
+              <input id="progress" type="range" min="0" max="100" value="0" aria-label="Progresso da música">
+            </div>
+            <span class="music-time" id="musicTime">0:00</span>
+          </div>
+
+          <a class="music-link" href="https://music.apple.com/us/song/1763951912" target="_blank" rel="noopener noreferrer">ouvir a música online ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERIA -->
+    <section class="section gallery">
+      <div class="section-heading">
+        <div>
+          <div class="section-label">Nossos registros</div>
+          <h2>Coisas que eu<br><em>guardaria para sempre.</em></h2>
+        </div>
+        <span class="gallery-count">05 fotos</span>
+      </div>
+
+      <div class="gallery-grid gallery-four">
+        <figure class="gallery-item large" data-lightbox="assets/foto-1.jpg">
+          <img src="assets/foto-1.jpg" alt="Momento especial">
+          <figcaption>“Que sorte a minha poder olhar para você.”</figcaption>
+        </figure>
+        <figure class="gallery-item" data-lightbox="assets/foto-2.jpg">
+          <img src="assets/foto-2.jpg" alt="Momento especial">
+          <figcaption>Você, do jeitinho que eu gosto.</figcaption>
+        </figure>
+        <figure class="gallery-item" data-lightbox="assets/foto-3.jpg">
+          <img src="assets/foto-3.jpg" alt="Memória especial">
+          <figcaption>Mais um pedacinho nosso.</figcaption>
+        </figure>
+        <figure class="gallery-item" data-lightbox="assets/foto-4.jpg">
+          <img src="assets/foto-4.jpg" alt="Memória especial">
+          <figcaption>Uma memória para guardar.</figcaption>
+        </figure>
+        <figure class="gallery-item gallery-item-new" data-lightbox="assets/foto-5.jpg">
+          <img src="assets/foto-5.jpg" alt="Um momento especial na praia">
+          <figcaption>Meu lugar favorito continua sendo ao seu lado.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- LIGHTBOX -->
+    <div class="lightbox hidden" id="lightbox" role="dialog" aria-modal="true" aria-label="Foto ampliada">
+      <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Fechar">×</button>
+      <img id="lightboxImage" src="" alt="Foto ampliada">
+    </div>
+
+    <!-- HISTÓRIA -->
+    <section class="section timeline" id="historia">
+      <div class="section-label">♡ A nossa história</div>
+      <h2>De dois lugares diferentes,<br><em>uma história só.</em></h2>
+      <p class="timeline-intro">A distância é uma parte da nossa história — mas nunca vai ser a parte mais importante dela.</p>
+
+      <div class="timeline-list">
+        <article class="timeline-item">
+          <span class="timeline-dot">♡</span>
+          <div class="timeline-date"><span>01</span><small>O começo</small></div>
+          <div class="timeline-content">
+            <span class="timeline-tag">Onde tudo começou</span>
+            <h3>O dia em que apareceu você</h3>
+            <p>Entre conversas, risadas e aquele sentimento que foi crescendo aos poucos, a gente começou a escrever uma história que eu jamais imaginaria que seria tão importante para mim.</p>
+            <div class="timeline-quote">“Sem perceber, você começou a ocupar um espaço enorme no meu coração.”</div>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <span class="timeline-dot">♡</span>
+          <div class="timeline-date"><span>02</span><small>17.07</small></div>
+          <div class="timeline-content">
+            <span class="timeline-tag">O nosso dia</span>
+            <h3>Quando nós viramos nós</h3>
+            <p>Em algum momento, deixou de ser apenas conversa. Deixou de ser apenas saudade. Virou escolha. Virou carinho. Virou amor. Virou nós dois.</p>
+            <div class="timeline-quote">“Se eu pudesse voltar naquele momento, escolheria você novamente.”</div>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <span class="timeline-dot">♡</span>
+          <div class="timeline-date"><span>03</span><small>400 km</small></div>
+          <div class="timeline-content">
+            <span class="timeline-tag">Mesmo de longe</span>
+            <h3>400 km nunca foram suficientes</h3>
+            <p>Entre chamadas, mensagens, saudades e noites desejando estar perto, continuamos encontrando maneiras de estar juntos. A distância existe, mas ela não decide o tamanho do que sentimos.</p>
+            <div class="distance-box"><div class="distance-number">400</div><div><strong>quilômetros</strong><span>entre dois corações que escolheram ficar juntos.</span></div></div>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <span class="timeline-dot">♡</span>
+          <div class="timeline-date"><span>04</span><small>17.09</small></div>
+          <div class="timeline-content">
+            <span class="timeline-tag">2 meses</span>
+            <h3>Dois meses de uma história que ainda está começando</h3>
+            <p>Dois meses não são o fim de nada. São só o primeiro marco de tudo o que ainda quero viver, descobrir e construir com você.</p>
+            <div class="timeline-quote final-quote">“Porque se for com você, eu quero viver todos os capítulos.”</div>
+          </div>
+        </article>
+      </div>
+
+      <div class="timeline-end"><span>♡</span><p>Continua...</p><small>Essa história ainda está sendo escrita por nós dois.</small></div>
+    </section>
+
+    <!-- CARTA -->
+    <section class="section letter-section">
+      <div class="letter">
+        <div class="letter-decoration">♡</div>
+        <div class="section-label">Uma carta para você</div>
+        <h2>Leia devagar.</h2>
+        <div class="letter-text" id="letterText">
+          <p>Meu amor,</p>
+          <p>Se você chegou até aqui, é porque abriu esse pequeno pedaço do meu coração que eu transformei em site.</p>
+          <p>Eu queria que você soubesse que esses dois meses significam muito para mim. Não só pelo número no calendário, mas por tudo o que aconteceu dentro de mim desde que você chegou.</p>
+          <p>Temos <strong>400 km</strong> entre a gente, mas você conseguiu ficar presente nos meus dias, nos meus pensamentos e nos meus planos. Às vezes a saudade dói, mas até ela é uma prova de que existe alguém que vale a pena esperar.</p>
+          <p>Obrigado por cada conversa, cada carinho, cada risada, cada noite em que ficamos falando e cada vez que você fez meu dia ficar melhor sem nem perceber.</p>
+          <p>Eu não quero apenas comemorar os dois meses. Quero comemorar todos os próximos marcos com você.</p>
+          <p>Com amor, sempre.<br><strong>Seu amor ❤️</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CÁPSULA -->
+    <section class="section capsule-section">
+      <div class="capsule">
+        <div class="capsule-top">
+          <span class="section-label">Uma promessa para o futuro</span>
+          <span class="capsule-date">17 • 09 • 2026</span>
+        </div>
+        <h2>Se um dia você esquecer o quanto é importante para mim...</h2>
+        <p>volta aqui e lembra que, entre todas as distâncias do mundo, eu escolhi construir uma ponte até você.</p>
+        <div class="promise-list">
+          <span>♡ continuar escolhendo você</span>
+          <span>♡ cuidar do nosso amor</span>
+          <span>♡ transformar saudade em encontro</span>
+          <span>♡ escrever muitos capítulos</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL / SURPRESA -->
+    <section class="section final">
+      <div class="final-heart">♥</div>
+      <div class="section-label">E se eu pudesse resumir tudo...</div>
+      <h2>Eu escolheria<br><em>você.</em></h2>
+      <p>Hoje. Depois de 2 meses. Mesmo a 400 km. E em todos os dias que a vida deixar a gente viver.</p>
+      <button id="surpriseBtn" class="primary-btn">Tenho mais uma coisa pra te mostrar ♥</button>
+
+      <div id="surprise" class="surprise hidden">
+        <div class="surprise-inner">
+          <span>♡</span>
+          <h3>Ei... olha aqui.</h3>
+          <p class="surprise-big">Se eu pudesse diminuir esses 400 km agora, eu faria.</p>
+          <p>Mas como ainda não posso, deixei pelo menos uma coisa bem clara neste site:</p>
+          <strong>eu quero continuar sendo nós. ❤️</strong>
+          <div class="surprise-stars">✦ · ✧ · ♥ · ✧ · ✦</div>
+        </div>
+      </div>
+    </section>
+
+    <footer>2 meses de nós • 400 km de distância • infinito de carinho <span>♥</span></footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
