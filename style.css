@@ -195,19 +195,52 @@ footer{text-align:center;border-top:1px solid var(--line);padding:30px;color:#67
   }
 }
 
-/* Celular deitado: evita o layout desktop e títulos cortados. */
+/* Celular deitado: mantém foto, badge e texto em blocos separados. */
 @media (orientation: landscape) and (max-height: 600px) and (max-width: 980px) {
+  .hero {
+    display: block;
+    min-height: auto;
+    overflow: visible;
+  }
+
   .hero-image {
-    height: 78svh;
-    min-height: 260px;
+    height: 72svh;
+    min-height: 240px;
+    max-height: none;
+  }
+
+  .hero-image:after {
+    background: linear-gradient(0deg, var(--bg) 0%, rgba(16,10,16,.72) 18%, transparent 56%);
+  }
+
+  .hero-badge {
+    left: 22px;
+    bottom: 18px;
+    padding: 10px 14px;
+    font-size: .58rem;
+    z-index: 4;
   }
 
   .hero-content {
-    margin-top: -12vh;
-    padding-bottom: 48px;
+    margin-top: 0;
+    padding: 26px 22px 48px;
+    background: var(--bg);
+  }
+
+  .hero-content .eyebrow {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 0 12px;
+    font-size: clamp(.52rem, 1.7vw, .66rem);
+    line-height: 1.5;
+    letter-spacing: .14em;
+    white-space: normal;
+    position: static;
   }
 
   .hero h1 {
-    font-size: clamp(2.8rem, 8vw, 4.6rem);
+    font-size: clamp(2.8rem, 7vw, 4.4rem);
+    margin-top: 8px;
   }
 }
